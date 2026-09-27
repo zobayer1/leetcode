@@ -1,4 +1,4 @@
-aclass Solution {
+class Solution {
 public:
     double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
         int n1 = static_cast<int>(nums1.size());
