@@ -34,4 +34,3 @@ public:
         return vector<int>{a, b};
     }
 };
-

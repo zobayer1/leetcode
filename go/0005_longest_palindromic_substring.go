@@ -39,4 +39,3 @@ func longestPalindrome(s string) string {
     start := (center_idx - maxlen) / 2
     return s[start: start+maxlen]
 }
-
