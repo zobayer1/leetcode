@@ -30,4 +30,3 @@ func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
     }
     return float64(sum) / 2.0
 }
-

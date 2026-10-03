@@ -10,4 +10,3 @@ func lengthOfLongestSubstring(s string) int {
     }
     return max_len
 }
-

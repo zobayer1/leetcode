@@ -37,4 +37,3 @@ func myAtoi(s string) int {
     }
     return int(num)
 }
-

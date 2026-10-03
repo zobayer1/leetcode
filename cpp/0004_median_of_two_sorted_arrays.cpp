@@ -22,4 +22,3 @@ public:
         return 0.5 * sum;
     }
 };
-

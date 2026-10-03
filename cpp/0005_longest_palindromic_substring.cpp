@@ -35,4 +35,3 @@ public:
         return s.substr(start, maxlen);
     }
 };
-
