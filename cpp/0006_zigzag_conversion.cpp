@@ -1,3 +1,9 @@
+#include <string>
+#include <vector>
+using namespace std;
+
+/* 6. Zigzag Conversion */
+
 class Solution {
 public:
     string convert(string s, int numRows) {

@@ -1,5 +1,10 @@
+#include <chrono>
 #include <unordered_map>
 #include <utility>
+
+using namespace std;
+
+/* 1. Two Sum */
 
 struct custom_hash {
     static uint64_t splitmix64(uint64_t x) {
@@ -10,7 +15,7 @@ struct custom_hash {
     }
 
     size_t operator()(uint64_t x) const {
-        static const uint64_t FIXED_RANDOM = std::chrono::steady_clock::now().time_since_epoch().count();
+        static const uint64_t FIXED_RANDOM = chrono::steady_clock::now().time_since_epoch().count();
         return splitmix64(x + FIXED_RANDOM);
     }
 };
@@ -18,7 +23,7 @@ struct custom_hash {
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        std::unordered_map<int, int, custom_hash> seen;
+        unordered_map<int, int, custom_hash> seen;
         int len = static_cast<int>(nums.size());
         int a, b;
         for (int i = 0; i < len; i++) {
@@ -30,7 +35,7 @@ public:
             }
             seen.insert({nums[i], i});
         }
-        if (a > b) std::swap(a, b);
+        if (a > b) swap(a, b);
         return vector<int>{a, b};
     }
 };

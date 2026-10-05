@@ -1,3 +1,10 @@
+#include <climits>
+#include <string>
+
+using namespace std;
+
+/* 8. String to Integer */
+
 class Solution {
 public:
     int myAtoi(string s) {

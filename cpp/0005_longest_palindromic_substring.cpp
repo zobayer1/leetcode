@@ -1,7 +1,14 @@
+#include <string>
+#include <vector>
+
+using namespace std;
+
+/* 5. Longest Palindromic Substring */
+
 class Solution {
 public:
-    std::string longestPalindrome(std::string s) {
-        std::string t;
+    string longestPalindrome(string s) {
+        string t;
         t.reserve(2 * s.length() + 3);
         t += "^";
         for (char c: s) {
@@ -12,7 +19,7 @@ public:
         
         int n = static_cast<int>(t.length());
         int center = 0, right = 0;
-        std::vector<int> P(n, 0);
+        vector<int> P(n, 0);
         for (int i = 1; i < n - 1; i++) {
             int mirror = 2 * center - i;
             if (i < right) P[i] = min(right - i, P[mirror]);

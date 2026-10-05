@@ -1,4 +1,8 @@
 #include <algorithm>
+#include <vector>
+using namespace std;
+
+/* 2144 Minimum Cost of Buying Candies with Discount */
 
 class Solution {
 public:
