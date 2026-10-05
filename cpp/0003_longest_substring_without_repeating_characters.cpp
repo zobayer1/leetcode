@@ -1,3 +1,9 @@
+#include <string>
+
+using namespace std;
+
+/* 3. Longest Substring Without Repeating Characters */
+
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
@@ -10,7 +16,7 @@ public:
                 left = last_seen[c];
             }
             last_seen[c] = right+1;
-            maxlen = std::max(maxlen, right - left + 1);
+            maxlen = max(maxlen, right - left + 1);
         }
         return maxlen;
     }
