@@ -2,7 +2,7 @@
 
 using namespace std;
 
-/* 11. Container with Most Water */
+/* 11. Container With Most Water */
 
 class Solution {
 public:

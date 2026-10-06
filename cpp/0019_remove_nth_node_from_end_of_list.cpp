@@ -6,7 +6,7 @@ struct ListNode {
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
-/* 19. Remove Nth Node from End of List */
+/* 19. Remove Nth Node From End of List */
 
 class Solution {
 public:
