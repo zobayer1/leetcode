@@ -3,7 +3,7 @@
 
 using namespace std;
 
-/* 16. 3Sum Closest*/
+/* 16. 3Sum Closest */
 
 class Solution {
 public:

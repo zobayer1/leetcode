@@ -4,7 +4,7 @@
 
 using namespace std;
 
-/* 17. Letter Combinations of A Phone Number */
+/* 17. Letter Combinations of a Phone Number */
 
 class Solution {
     string keys[10] = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};

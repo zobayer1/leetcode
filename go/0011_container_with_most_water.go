@@ -1,6 +1,6 @@
 package main
 
-// 11. Container with Most Water
+// 11. Container With Most Water
 
 func maxArea(height []int) int {
 	n := len(height)

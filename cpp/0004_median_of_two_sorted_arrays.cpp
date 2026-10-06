@@ -2,7 +2,6 @@
 
 using namespace std;
 
-
 /* 4. Median of Two Sorted Arrays */
 
 class Solution {

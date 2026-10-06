@@ -3,7 +3,7 @@
 
 using namespace std;
 
-/* 3120 Count The Number of Special Characters I */
+/* 3120. Count the Number of Special Characters I */
 
 class Solution {
 public:

@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-/* 2144 Minimum Cost of Buying Candies with Discount */
+/* 2144. Minimum Cost of Buying Candies With Discount */
 
 class Solution {
 public:
