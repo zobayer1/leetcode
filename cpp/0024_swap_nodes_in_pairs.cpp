@@ -11,27 +11,21 @@ struct ListNode {
 class Solution {
 public:
     ListNode* swapPairs(ListNode* head) {
-        if (head == nullptr || head->next == nullptr) {
-            return head;
-        }
-        ListNode* first = head;
-        ListNode* second = head->next;
-        first->next = second->next;
-        second->next = first;
-        head = second;
+        ListNode* dummy = new ListNode(0);
+        dummy->next = head;
+        ListNode* prev = dummy;
 
-        ListNode* ptemp = head->next;
-        ListNode* temp = head->next->next;
+        while(prev->next != nullptr && prev->next->next != nullptr) {
+            ListNode* first = prev->next;
+            ListNode* second = first->next;
 
-        while (temp != nullptr && temp->next != nullptr) {
-            first = temp;
-            second = temp->next;
-            first->next = second->next;
+            ListNode* nextptr = second->next;
+            prev->next = second;
             second->next = first;
-            ptemp->next = second;
-            ptemp = second->next;
-            temp = second->next->next;
+            first->next = nextptr;
+
+            prev = first;
         }
-        return head;
+        return dummy->next;
     }
 };
