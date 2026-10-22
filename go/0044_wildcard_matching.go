@@ -1,21 +1,30 @@
 package main
 
 // 44. Wildcard Matching
+// Rename signature: func isMatch(string, string) bool
 
 func isMatch2(s string, p string) bool {
 	n, m := len(s), len(p)
-	dp := [2][2001]bool{}
-	for i := n; i >= 0; i-- {
-		dp[i&1][m] = i == n
-		for j := m - 1; j >= 0; j-- {
-			if p[j] == '*' {
-				dp[i&1][j] = dp[i&1][j+1] || (i < n && dp[(i+1)&1][j])
-			} else if i < n && (p[j] == '?' || s[i] == p[j]) {
-				dp[i&1][j] = dp[(i+1)&1][j+1]
-			} else {
-				dp[i&1][j] = false
-			}
+	s_idx, p_idx := 0, 0
+	star_idx, skip_idx := -1, -1
+	for s_idx < n {
+		if p_idx < m && (p[p_idx] == '?' || s[s_idx] == p[p_idx]) {
+			s_idx++
+			p_idx++
+		} else if p_idx < m && p[p_idx] == '*' {
+			star_idx = p_idx
+			skip_idx = s_idx
+			p_idx++
+		} else if star_idx != -1 {
+			p_idx = star_idx + 1
+			skip_idx++
+			s_idx = skip_idx
+		} else {
+			return false
 		}
 	}
-	return dp[0][0]
+	for p_idx < m && p[p_idx] == '*' {
+		p_idx++
+	}
+	return p_idx == m
 }
