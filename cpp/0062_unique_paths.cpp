@@ -7,7 +7,7 @@ using namespace std;
 
 class Solution {
     int choose(int m, int n) {
-        int k = std::min(m, n);
+        int k = min(m, n);
         int total = m + n;
         
         int res = 1;
@@ -16,11 +16,11 @@ class Solution {
             int numerator = total - k + i;
             int denominator = i;
             
-            int g = std::gcd(res, denominator);
+            int g = gcd(res, denominator);
             res /= g;
             denominator /= g;
             
-            g = std::gcd(numerator, denominator);
+            g = gcd(numerator, denominator);
             numerator /= g;
             denominator /= g;
             
