@@ -1,107 +1,85 @@
 package main
 
-import "strings"
-
 // 65. Valid Number
 
-func isValidChars(s string) bool {
-	for i := 0; i < len(s); i++ {
-		c := s[i]
-		if c != 'E' && c != 'e' && (c < '0' || c > '9') && c != '+' && c != '-' && c != '.' {
-			return false
-		}
+type Solution struct {
+	input string
+	pos   int
+}
+
+func (sol *Solution) peek() (byte, bool) {
+	if sol.pos < len(sol.input) {
+		return sol.input[sol.pos], true
+	}
+	return 0, false
+}
+
+func (sol *Solution) isDigit() bool {
+	pk, ok := sol.peek()
+	return ok && pk >= '0' && pk <= '9'
+}
+
+func (sol *Solution) consume(c byte) bool {
+	pk, ok := sol.peek()
+	if !ok || pk != c {
+		return false
+	}
+	sol.pos++
+	return true
+}
+
+func (sol *Solution) consumed() bool {
+	return sol.pos == len(sol.input)
+}
+
+func (sol *Solution) parseSign() bool {
+	return sol.consume('+') || sol.consume('-')
+}
+
+func (sol *Solution) parseDigits() bool {
+	if !sol.isDigit() {
+		return false
+	}
+	for sol.isDigit() {
+		sol.pos++
 	}
 	return true
 }
 
-func findExPos(s string) int {
-	first := strings.IndexAny(s, "eE")
-	if first == -1 {
-		return len(s)
+func (sol *Solution) parseUnsignedNumber() bool {
+	if sol.parseDigits() {
+		if sol.consume('.') {
+			_ = sol.parseDigits()
+		}
+		return true
 	}
-	if strings.ContainsAny(s[first+1:], "eE") {
-		return -1
+	if sol.consume('.') {
+		return sol.parseDigits()
 	}
-	return first
+	return false
 }
 
-func findDotPos(s string) int {
-	first := strings.IndexByte(s, '.')
-	if first == -1 {
-		return len(s)
-	}
-	if strings.IndexByte(s[first+1:], '.') != -1 {
-		return -1
-	}
-	return first
-}
-
-func isInteger(s string) bool {
-	if len(s) == 0 {
+func (sol *Solution) parseExponent() bool {
+	if !sol.consume('e') && !sol.consume('E') {
 		return false
 	}
-	for i := 0; i < len(s); i++ {
-		if s[i] < '0' || s[i] > '9' {
-			return false
-		}
+	_ = sol.parseSign()
+	return sol.parseDigits()
+}
+
+func (sol *Solution) parseNumber() bool {
+	_ = sol.parseSign()
+	if !sol.parseUnsignedNumber() {
+		return false
+	}
+	pk, ok := sol.peek()
+	if ok && (pk == 'e' || pk == 'E') {
+		return sol.parseExponent()
 	}
 	return true
 }
 
 func isNumber(s string) bool {
-	if !isValidChars(s) {
-		return false
-	}
-
-	exPos := findExPos(s)
-	if exPos == -1 {
-		return false
-	}
-
-	if exPos < len(s) {
-		exponent := s[exPos+1:]
-		if len(exponent) == 0 {
-			return false
-		}
-		if exponent[0] == '+' || exponent[0] == '-' {
-			exponent = exponent[1:]
-		}
-		if !isInteger(exponent) {
-			return false
-		}
-	}
-
-	number := s[:exPos]
-	if len(number) == 0 {
-		return false
-	}
-	if number[0] == '+' || number[0] == '-' {
-		number = number[1:]
-	}
-	if len(number) == 0 {
-		return false
-	}
-
-	dotPos := findDotPos(number)
-	if dotPos == -1 {
-		return false
-	}
-	if dotPos == len(number) {
-		return isInteger(number)
-	}
-
-	before := number[:dotPos]
-	after := number[dotPos+1:]
-
-	if len(before) == 0 && len(after) == 0 {
-		return false
-	}
-	if len(before) > 0 && !isInteger(before) {
-		return false
-	}
-	if len(after) > 0 && !isInteger(after) {
-		return false
-	}
-
-	return true
+	sol := Solution{input: s, pos: 0}
+	return sol.parseNumber() && sol.consumed()
 }
