@@ -1,6 +1,6 @@
 package main
 
-// 22. Generate Parentheses
+/* 22. Generate Parentheses */
 
 func recur(a, b, s int, curr []rune, paths *[]string) {
 	if a == 0 && b == 0 {

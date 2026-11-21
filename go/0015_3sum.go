@@ -2,7 +2,7 @@ package main
 
 import "slices"
 
-// 15. 3Sum
+/* 15. 3Sum */
 
 func threeSum(nums []int) [][]int {
 	n := len(nums)

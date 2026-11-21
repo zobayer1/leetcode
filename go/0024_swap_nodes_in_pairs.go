@@ -1,6 +1,6 @@
 package main
 
-// 24. Swap Nodes in Pairs
+/* 24. Swap Nodes in Pairs */
 
 func swapPairs(head *ListNode) *ListNode {
 	dummy := &ListNode{Next: head}

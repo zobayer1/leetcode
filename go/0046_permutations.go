@@ -2,7 +2,7 @@ package main
 
 import "sort"
 
-// 46. Permutations
+/* 46. Permutations */
 
 func reverseRange(nums []int, start, end int) {
 	for start < end {

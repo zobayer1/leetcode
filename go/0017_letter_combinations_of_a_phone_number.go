@@ -2,7 +2,7 @@ package main
 
 import "container/list"
 
-// 17. Letter Combinations of a Phone Number
+/* 17. Letter Combinations of a Phone Number */
 
 func letterCombinations(digits string) []string {
 	keys := [10]string{"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"}

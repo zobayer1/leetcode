@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-// 38. Count and Say
+/* 38. Count and Say */
 
 func rle(s *string) string {
 	var sb strings.Builder

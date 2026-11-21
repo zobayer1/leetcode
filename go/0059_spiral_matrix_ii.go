@@ -1,6 +1,6 @@
 package main
 
-// 59. Spiral Matrix II
+/* 59. Spiral Matrix II */
 
 func generateMatrix(n int) [][]int {
 	minr, minc := 0, 0

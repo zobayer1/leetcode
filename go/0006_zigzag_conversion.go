@@ -2,7 +2,7 @@ package main
 
 import "strings"
 
-// 6. Zigzag Conversion
+/* 6. Zigzag Conversion */
 
 func convert(s string, numRows int) string {
 	sv := make([]strings.Builder, numRows)

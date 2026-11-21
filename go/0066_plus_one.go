@@ -1,6 +1,6 @@
 package main
 
-// 66. Plus One
+/* 66. Plus One */
 
 func plusOne(digits []int) []int {
 	carry := 1

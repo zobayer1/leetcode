@@ -1,6 +1,6 @@
 package main
 
-// 57. Insert Interval
+/* 57. Insert Interval */
 
 func insert(intervals [][]int, newInterval []int) [][]int {
 	n := len(intervals)

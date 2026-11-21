@@ -1,6 +1,6 @@
 package main
 
-// 54. Spiral Matrix
+/* 54. Spiral Matrix */
 
 func spiralOrder(matrix [][]int) []int {
 	minr, minc := 0, 0

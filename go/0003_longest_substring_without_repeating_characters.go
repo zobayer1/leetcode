@@ -1,6 +1,6 @@
 package main
 
-// 3. Longest Substring Without Repeating Characters
+/* 3. Longest Substring Without Repeating Characters */
 
 func lengthOfLongestSubstring(s string) int {
 	last_seen := [128]int{}

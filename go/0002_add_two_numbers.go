@@ -5,7 +5,7 @@ type ListNode struct {
 	Next *ListNode
 }
 
-// 2. Add Two Numbers
+/* 2. Add Two Numbers */
 
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	var carry, a, b int

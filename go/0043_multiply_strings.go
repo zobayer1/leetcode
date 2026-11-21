@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-// 43. Multiply Strings
+/* 43. Multiply Strings */
 
 func removeLeadingZeroes(num string) string {
 	s := strings.TrimLeft(num, "0")

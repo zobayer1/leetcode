@@ -2,7 +2,7 @@ package main
 
 import "slices"
 
-// 18. 4Sum
+/* 18. 4Sum */
 
 func fourSum(nums []int, target int) [][]int {
 	n := len(nums)

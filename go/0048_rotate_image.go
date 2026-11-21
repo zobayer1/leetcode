@@ -2,7 +2,7 @@ package main
 
 import "slices"
 
-// 48. Rotate Image
+/* 48. Rotate Image */
 
 func rotate(matrix [][]int) {
 	n := len(matrix)

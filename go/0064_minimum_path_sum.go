@@ -1,6 +1,6 @@
 package main
 
-// 64. Minimum Path Sum
+/* 64. Minimum Path Sum */
 
 func minPathSum(grid [][]int) int {
 	r, c := len(grid), len(grid[0])

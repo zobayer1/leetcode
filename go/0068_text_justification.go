@@ -2,7 +2,7 @@ package main
 
 import "strings"
 
-// 68. Text Justification
+/* 68. Text Justification */
 
 func concatLeftAligned(words []string, start, end, maxWidth int) string {
 	var res strings.Builder

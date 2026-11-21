@@ -2,7 +2,7 @@ package main
 
 import "strings"
 
-// 5. Longest Palindromic Substring
+/* 5. Longest Palindromic Substring */
 
 func transformString(s string) string {
 	var t strings.Builder

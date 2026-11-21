@@ -1,7 +1,7 @@
 package main
 
-// 44. Wildcard Matching
-// Rename signature: func isMatch(string, string) bool
+/* 44. Wildcard Matching */
+/* Rename signature: func isMatch(string, string) bool */
 
 func isMatch2(s string, p string) bool {
 	n, m := len(s), len(p)

@@ -1,6 +1,6 @@
 package main
 
-// 21. Merge Two Sorted Lists
+/* 21. Merge Two Sorted Lists */
 
 func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
 	head := &ListNode{}

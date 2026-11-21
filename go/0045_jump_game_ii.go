@@ -1,6 +1,6 @@
 package main
 
-// 45. Jump Game II
+/* 45. Jump Game II */
 
 func jump(nums []int) int {
 	n := len(nums)

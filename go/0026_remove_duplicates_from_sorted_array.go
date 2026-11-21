@@ -1,6 +1,6 @@
 package main
 
-// 26. Remove Duplicates from Sorted Array
+/* 26. Remove Duplicates from Sorted Array */
 
 func removeDuplicates(nums []int) int {
 	k := 1

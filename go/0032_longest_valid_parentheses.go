@@ -1,6 +1,6 @@
 package main
 
-// 32. Longest Valid Parentheses
+/* 32. Longest Valid Parentheses */
 
 func longestValidParentheses(s string) int {
 	left, right := 0, 0

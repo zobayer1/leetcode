@@ -1,6 +1,6 @@
 package main
 
-// 61. Rotate List
+/* 61. Rotate List */
 
 func rotateRight(head *ListNode, k int) *ListNode {
 	total := 0

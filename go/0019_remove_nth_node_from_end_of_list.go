@@ -1,6 +1,6 @@
 package main
 
-// 19. Remove Nth Node From End of List
+/* 19. Remove Nth Node From End of List */
 
 func removeNthFromEnd(head *ListNode, n int) *ListNode {
 	ptr_r, ptr_l := head, (*ListNode)(nil)

@@ -1,6 +1,6 @@
 package main
 
-// 31. Next Permutation
+/* 31. Next Permutation */
 
 func nextPermutation(nums []int) {
 	if len(nums) <= 1 {

@@ -1,6 +1,6 @@
 package main
 
-// 35. Search Insert Position
+/* 35. Search Insert Position */
 
 func searchInsert(nums []int, target int) int {
 	low, high := 0, len(nums)-1

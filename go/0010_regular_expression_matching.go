@@ -1,6 +1,6 @@
 package main
 
-// 10. Regular Expression Matching
+/* 10. Regular Expression Matching */
 
 func isMatch(s string, p string) bool {
 	dp := [2][21]bool{}

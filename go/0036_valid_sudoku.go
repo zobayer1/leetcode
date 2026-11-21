@@ -1,6 +1,6 @@
 package main
 
-// 36. Valid Sudoku
+/* 36. Valid Sudoku */
 
 func isValidSudoku(board [][]byte) bool {
 	rcnt := [9][10]int{}

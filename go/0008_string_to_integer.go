@@ -2,7 +2,7 @@ package main
 
 import "math"
 
-// 8. String to Integer
+/* 8. String to Integer */
 
 func myAtoi(s string) int {
 	start := 0

@@ -1,6 +1,6 @@
 package main
 
-// 63. Unique Paths II
+/* 63. Unique Paths II */
 
 func uniquePathsWithObstacles(obstacleGrid [][]int) int {
 	m := len(obstacleGrid)

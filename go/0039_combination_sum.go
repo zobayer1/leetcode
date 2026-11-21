@@ -2,7 +2,7 @@ package main
 
 import "sort"
 
-// 39. Combination Sum
+/* 39. Combination Sum */
 
 func combinationSum(candidates []int, target int) [][]int {
 	var results [][]int

@@ -1,6 +1,6 @@
 package main
 
-// 14. Longest Common Prefix
+/* 14. Longest Common Prefix */
 
 func longestCommonPrefix(strs []string) string {
 	j := 0

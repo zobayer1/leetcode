@@ -1,6 +1,6 @@
 package main
 
-// 30. Substring with Concatenation of All Words
+/* 30. Substring with Concatenation of All Words */
 
 var primebase = 31
 var primemod = 1000000007

@@ -1,6 +1,6 @@
 package main
 
-// 65. Valid Number
+/* 65. Valid Number */
 
 type Solution struct {
 	input string

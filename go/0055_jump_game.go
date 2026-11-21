@@ -1,6 +1,6 @@
 package main
 
-// 55. Jump Game
+/* 55. Jump Game */
 
 func canJump(nums []int) bool {
 	n := len(nums)

@@ -2,7 +2,7 @@ package main
 
 import "sort"
 
-// 56. Merge Intervals
+/* 56. Merge Intervals */
 
 func merge(intervals [][]int) [][]int {
 	sort.Slice(intervals, func(i, j int) bool {

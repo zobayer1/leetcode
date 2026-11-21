@@ -1,6 +1,6 @@
 package main
 
-// 20. Valid Parentheses
+/* 20. Valid Parentheses */
 
 func oppose(p1, p2 rune) bool {
 	switch {

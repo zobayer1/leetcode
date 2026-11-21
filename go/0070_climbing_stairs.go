@@ -1,6 +1,6 @@
 package main
 
-// 70. Climbing Stairs
+/* 70. Climbing Stairs */
 
 func climbStairs(n int) int {
 	a, b, c := 0, 1, 1

@@ -1,6 +1,6 @@
 package main
 
-// 69. Sqrt(x)
+/* 69. Sqrt(x) */
 
 func mySqrt(x int) int {
 	if x < 2 {

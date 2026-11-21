@@ -1,6 +1,6 @@
 package main
 
-// 4. Median of Two Sorted Arrays
+/* 4. Median of Two Sorted Arrays */
 
 func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 	var n1, n2 = len(nums1), len(nums2)

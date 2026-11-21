@@ -1,6 +1,6 @@
 package main
 
-// 41. First Missing Positive
+/* 41. First Missing Positive */
 
 func firstMissingPositive(nums []int) int {
 	n := len(nums)

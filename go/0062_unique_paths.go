@@ -1,6 +1,6 @@
 package main
 
-// 62. Unique Paths
+/* 62. Unique Paths */
 
 func gcd(a, b int) int {
 	for b > 0 {

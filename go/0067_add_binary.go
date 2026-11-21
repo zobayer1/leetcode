@@ -1,6 +1,6 @@
 package main
 
-// 67. Add Binary
+/* 67. Add Binary */
 
 func addBinary(a string, b string) string {
 	na, nb := len(a), len(b)

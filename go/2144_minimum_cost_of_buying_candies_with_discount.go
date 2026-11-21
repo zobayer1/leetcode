@@ -2,7 +2,7 @@ package main
 
 import "slices"
 
-// 2144. Minimum Cost of Buying Candies With Discount
+/* 2144. Minimum Cost of Buying Candies With Discount */
 
 func minimumCost(cost []int) int {
 	slices.Sort(cost[:])

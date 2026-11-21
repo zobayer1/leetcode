@@ -1,6 +1,6 @@
 package main
 
-// 58. Length of Last Word
+/* 58. Length of Last Word */
 
 func lengthOfLastWord(s string) int {
 	n := len(s)

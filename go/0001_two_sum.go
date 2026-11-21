@@ -1,6 +1,6 @@
 package main
 
-// 1. Two Sum
+/* 1. Two Sum */
 
 func twoSum(nums []int, target int) []int {
 	seen := make(map[int]int, len(nums))

@@ -1,6 +1,6 @@
 package main
 
-// 42. Trapping Rain Water
+/* 42. Trapping Rain Water */
 
 func trap(height []int) int {
 	maxleft, maxright := 0, 0

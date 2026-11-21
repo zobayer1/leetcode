@@ -2,7 +2,7 @@ package main
 
 import "math"
 
-// 7. Reverse Integer
+/* 7. Reverse Integer */
 
 func safe_calc(a, digit int) (int, bool) {
 	if a > math.MaxInt32/10 {

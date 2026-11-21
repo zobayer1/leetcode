@@ -1,6 +1,6 @@
 package main
 
-// 53. Maximum Subarray
+/* 53. Maximum Subarray */
 
 func maxSubArray(nums []int) int {
 	currentSum, globalMax := 0, nums[0]

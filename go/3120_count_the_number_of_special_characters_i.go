@@ -1,6 +1,6 @@
 package main
 
-// 3120. Count the Number of Special Characters I
+/* 3120. Count the Number of Special Characters I */
 
 func numberOfSpecialChars(word string) int {
 	up := make([]int, 26)

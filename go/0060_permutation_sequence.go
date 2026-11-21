@@ -2,7 +2,7 @@ package main
 
 import "slices"
 
-// 60. Permutation Sequence
+/* 60. Permutation Sequence */
 
 func getPermutation(n int, k int) string {
 	factorials := [10]int{1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880}

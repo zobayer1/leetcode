@@ -1,6 +1,6 @@
 package main
 
-// 34. Find First and Last Position of Element in Sorted Array
+/* 34. Find First and Last Position of Element in Sorted Array */
 
 func searchRange(nums []int, target int) []int {
 	low, high := 0, len(nums)-1

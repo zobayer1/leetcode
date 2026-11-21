@@ -2,7 +2,7 @@ package main
 
 import "math"
 
-// 29. Divide Two Integers
+/* 29. Divide Two Integers */
 
 func abs(n int) int {
 	if n < 0 {

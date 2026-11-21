@@ -2,7 +2,7 @@ package main
 
 import "slices"
 
-// 16. 3Sum Closest
+/* 16. 3Sum Closest */
 
 func absInt(n int) int {
 	if n < 0 {

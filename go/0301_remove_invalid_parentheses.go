@@ -1,6 +1,6 @@
 package main
 
-// 301. Remove Invalid Parentheses
+/* 301. Remove Invalid Parentheses */
 
 type solution struct {
 	dp    [27][27]int

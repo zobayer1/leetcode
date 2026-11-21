@@ -1,6 +1,6 @@
 package main
 
-// 12. Integer to Roman
+/* 12. Integer to Roman */
 
 func intToRoman(num int) string {
 	var (

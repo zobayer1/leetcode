@@ -2,7 +2,7 @@ package main
 
 import "sort"
 
-// 49. Group Anagrams
+/* 49. Group Anagrams */
 
 func groupAnagrams(strs []string) [][]string {
 	anagrams := map[string][]string{}
