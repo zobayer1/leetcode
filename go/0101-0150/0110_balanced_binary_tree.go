@@ -2,6 +2,13 @@ package main
 
 /* 110. Balanced Binary Tree */
 
+func absInt(x int) int {
+	if x < 0 {
+		return -x
+	}
+	return x
+}
+
 func depth(curr *TreeNode) (int, bool) {
 	if curr == nil {
 		return 0, true
